@@ -40,6 +40,10 @@ ol, ul{
 	align-items: center;
 }
 
+.clr{
+	clear: both;
+}
+
 .pd-10{
 	padding: 10px;
 }
@@ -60,9 +64,9 @@ ol, ul{
 	margin: 20px;
 }
 
-/* ---------- div AND NAVBAR --------- */
+/* ---------- HEADER AND NAVBAR --------- */
 
-div#main-nav{
+header#main-nav{
 	background: #20C258;
 }
 
@@ -110,7 +114,7 @@ div#main-nav{
 	transform: translateX(-200px);
 }
 
-/* ---------- HAMBURGER MENU ---------- */
+/* -------- HAMBURGER MENU BUTTON -------- */
 
 #btn-menu{
 	border: 1px solid #fff;

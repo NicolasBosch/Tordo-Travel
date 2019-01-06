@@ -25,7 +25,6 @@
 				<p>TORDO TRAVEL</p>
 			</div>
 		</div>
-		<div class="modal-bg d-none">
 			<nav id="navbar" class="navbar-off">
 				<div id="btn-close">
 					<div class="line"></div>
@@ -40,19 +39,8 @@
 					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 			</nav>
-		</div>
+			<div class="clr"></div>
 	</header>
 </body>
-<script>
-	var btn = document.querySelector("#btn-menu");
-	var navbar = document.querySelector("nav#navbar");
-	var btnClose = document.querySelector("#btn-close");
-
-	btn.addEventListener('click', function(){
-		navbar.classList.toggle('navbar-off');
-	})
-	btnClose.addEventListener('click', function(){
-		navbar.classList.toggle('navbar-off');
-	})
-</script>
+<script src="js/menu.js"></script>
 </html>

@@ -1,6 +1,49 @@
+/* -------- HEADER AND NAVBAR --------- */
+
+header#main-nav{
+	background: rgba(32, 194, 89, 0.555);
+}
+
+header#main-nav>div{
+	display: inline-block;
+}
+
+#brand-title{
+	text-align: left;
+	padding: 0;
+}
+
+#navbar{
+	position: static;
+	float: right;
+	width: auto;
+	height: auto;
+	background: none;
+	transform: none;
+}
+
+#navbar ul li{
+	display: inline-block;
+	margin: 0 1vw 0 0;
+	padding: 0;
+}
+
+#navbar ul li a{
+	display: inline-block;
+	padding: 10px 1.2vw;
+	transition: background 200ms ease-in; 
+}
+
+#navbar ul>li>a:link, #navbar ul>li>a:visited{
+	color: #efefef;
+}
+
+#navbar a:hover{
+	background: rgba(255, 255, 255, 0.178);
+}
 /* ------- HAMBURGER MENU -------- */
 
-#btn-menu{
+#btn-menu, #btn-close{
 	position: absolute;
 	left: -9999px;
 	top: -9999px;
