@@ -11,6 +11,48 @@
 	<title>Tordo Travel - Travel Agency</title>
 </head>
 <body>
-	
+	<header id="main-nav">
+		<div class="flex row justify-center align-center pd-15">
+			<div id="btn-menu">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div id="main-logo">
+				<img src="img/logo-white.png" alt="Tordo Travel">
+			</div>
+			<div id="brand-title">
+				<p>TORDO TRAVEL</p>
+			</div>
+		</div>
+		<div class="modal-bg d-none">
+			<nav id="navbar" class="navbar-off">
+				<div id="btn-close">
+					<div class="line"></div>
+					<div class="line"></div>
+				</div>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#flights">Flights</a></li>
+					<li><a href="#tours">Tours</a></li>
+					<li><a href="#packages">Packages</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 </body>
+<script>
+	var btn = document.querySelector("#btn-menu");
+	var navbar = document.querySelector("nav#navbar");
+	var btnClose = document.querySelector("#btn-close");
+
+	btn.addEventListener('click', function(){
+		navbar.classList.toggle('navbar-off');
+	})
+	btnClose.addEventListener('click', function(){
+		navbar.classList.toggle('navbar-off');
+	})
+</script>
 </html>

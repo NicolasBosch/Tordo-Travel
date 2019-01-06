@@ -1,0 +1,155 @@
+/* ---------- GLOBAL ------------ */
+
+*{
+	border: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body{
+	font-size: 17px;
+	line-height: 1.2em;
+}
+
+ol, ul{
+	list-style: none;
+}
+
+.hide{
+	position: absolute !important;
+	top: -9999px !important;
+	left: -9999px !important;
+	opacity: 0 !important;
+}
+
+.flex{
+	display: flex;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.justify-center{
+	justify-content: center;
+}
+
+.align-center{
+	align-items: center;
+}
+
+.pd-10{
+	padding: 10px;
+}
+.pd-15{
+	padding: 15px;
+}
+.pd-20{
+	padding: 20px;
+}
+
+.mg-10{
+	margin: 10px;
+}
+.mg-15{
+	margin: 15px;
+}
+.mg-20{
+	margin: 20px;
+}
+
+/* ---------- div AND NAVBAR --------- */
+
+div#main-nav{
+	background: #20C258;
+}
+
+#main-logo{
+	width: 50px;
+	margin: auto;
+}
+
+#main-logo>img{
+	width: 100%;
+}
+
+#brand-title{
+	color: #efefef;
+	text-align: center;
+	padding: 20px 0;
+}
+
+#navbar{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100vh;
+	background: #FFE7C2;
+	transition: transform 200ms ease-out;
+}
+
+#navbar ul{
+	padding-top: 25px;
+}
+
+#navbar ul li{
+	padding: 10px 15px;
+	margin-bottom: 5px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#navbar ul>li>a:link, #navbar ul>li>a:visited{
+	color: #666666;
+}
+
+.navbar-off{
+	transform: translateX(-200px);
+}
+
+/* ---------- HAMBURGER MENU ---------- */
+
+#btn-menu{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	width: 40px;
+	height: 40px;
+}
+
+.line{
+	width: 26px;
+	height: 4px;
+	background: #fff;
+	margin-top: 6px;
+	margin-left: 6px;
+}
+
+#btn-menu:active, #btn-close:active{
+	opacity: 0.7;
+}
+
+#btn-close{
+	border: 1px solid #555555;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+
+#btn-close>.line{
+	width: 23px;
+	background: #555555;
+}
+
+#btn-close>.line:first-child{
+	transform: translate(-3px,5px) rotate(45deg);
+}
+
+#btn-close>.line:last-child{
+	transform: translate(-3px,-5px) rotate(-45deg);
+}
