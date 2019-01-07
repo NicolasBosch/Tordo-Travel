@@ -360,3 +360,52 @@ header#main-nav{
 .more-info a:link, .more-info a:visited, .more-info a:active{
 	color: #efefef;
 }
+
+/* ------ TOURS -------- */
+
+.tour-wrapper{
+	width: 90%;
+	margin: 0 auto 15px auto;
+	box-shadow: 1px 1px 0 0 #e2e2e2;
+	padding: 5px;
+	position: relative;
+}
+.tour-img{
+	width: 100%;
+	overflow: hidden;
+}
+
+.tour-desc h4{
+	border-bottom: 2px solid #1daf5065;
+	margin-bottom: 1vw;
+}
+.tour-img img{
+	width: 100%;
+}
+
+.location{
+	font-size: 0.75em;
+	text-align: left;
+}
+
+.right-btn{
+	position: absolute;
+	bottom: 3px;
+	right: 3px;
+}
+
+.tour-price{
+	padding: 5px 10px;
+	font-weight: bold;
+	text-align: right;
+}
+.details{
+	background: #FFE7C2;
+}
+
+.details a{
+	color: #7c7c7c;
+	font-weight: bold;
+	display: inline-block;
+	padding: 5px 10px;
+}

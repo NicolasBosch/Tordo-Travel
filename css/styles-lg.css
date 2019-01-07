@@ -57,7 +57,12 @@ header#main-nav>div{
 /* ------- CAPTIONS ---------- */
 
 .slide-text{
-	width: 60%;
+	width: 70vw;
+}
+
+.slide-text h3{
+	font-size: 3vw;
+	margin: 5px;
 }
 
 /* --------- PACKAGES -------- */
@@ -65,4 +70,39 @@ header#main-nav>div{
 #packages{
 	width: 90%;
 	margin: auto;
+}
+
+/* --------- TOURS ----------- */
+
+.tour-img{
+	width: 40%;
+	float: left;
+}
+
+.tour-desc{
+	width: 60%;
+	float: right;
+	padding: 20px;
+}
+
+.tour-desc h4{
+	font-size: 2vw;
+	padding: 1vw;
+}
+
+.tour-desc p{
+	font-size: 1.7vw;
+}
+
+.location{
+	position: absolute;
+	bottom: 15px;
+	padding-left: 15px;
+	font-size: 1em;
+	font-style: italic;
+}
+
+.right-btn{
+	bottom: 20px;
+	right: 20px;
 }

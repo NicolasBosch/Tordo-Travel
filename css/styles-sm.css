@@ -1,3 +1,6 @@
+.hide-on-md{
+	display: none;
+}
 
 .cycle-button{
 	width: 40px;
