@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/global-styles.css">
 	<link rel="stylesheet" href="css/styles-sm.css" media="(max-width:576px)">
 	<link rel="stylesheet" href="css/styles-md.css" media="(min-width:577px) and (max-width:767px)">
@@ -11,36 +12,108 @@
 	<title>Tordo Travel - Travel Agency</title>
 </head>
 <body>
-	<header id="main-nav">
-		<div class="flex row justify-center align-center pd-15">
-			<div id="btn-menu">
-				<div class="line"></div>
+	<!-- Header and Navbar -->
+<header id="main-nav">
+	<div class="flex row justify-center align-center pd-15">
+		<div id="btn-menu">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div id="main-logo">
+			<img src="img/logo-white.png" alt="Tordo Travel">
+		</div>
+		<div id="brand-title">
+			<h1>TORDO TRAVEL</h1>
+		</div>
+	</div>
+		<nav id="navbar" class="navbar-off">
+			<div id="btn-close">
 				<div class="line"></div>
 				<div class="line"></div>
 			</div>
-			<div id="main-logo">
-				<img src="img/logo-white.png" alt="Tordo Travel">
-			</div>
-			<div id="brand-title">
-				<p>TORDO TRAVEL</p>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#flights">Flights</a></li>
+				<li><a href="#tours">Tours</a></li>
+				<li><a href="#packages">Packages</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="clr"></div>
+</header>
+
+<!-- Main Slider -->
+<main>
+	<div id="main-slider" class="slider-container flex">
+		<!-- Slider intdicators -->
+		<div class="slider-indicators">
+			<div class="indicator indicator-active"></div>
+			<div class="indicator"></div>
+			<div class="indicator"></div>
+			<div class="indicator"></div>
+		</div>
+
+		<!-- Slider Content -->
+
+		<div class="slider-item">
+			<picture>
+				<source media="(max-width: 576px)" srcset="img/newyork-mb.jpg">
+				<source media="(min-width: 577px)" srcset="img/newyork.jpg">
+				<img src="img/newyork.jpg" alt="new york">
+			</picture>
+			<div class="slide-text pd-10">
+				<h3 class="mg-20">New York</h3>
+				<p><q class="mg-10">"The city that never sleeps".</q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi tenetur iste, sunt, deleniti fugiat blanditiis modi repudiandae sit quibusdam quisquam assumenda asperiores iure aspernatur ea, at optio enim dolorem. Cumque neque voluptatum nam ratione impedit quos dignissimos amet tempora culpa.</p>
 			</div>
 		</div>
-			<nav id="navbar" class="navbar-off">
-				<div id="btn-close">
-					<div class="line"></div>
-					<div class="line"></div>
-				</div>
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#flights">Flights</a></li>
-					<li><a href="#tours">Tours</a></li>
-					<li><a href="#packages">Packages</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#contact">Contact Us</a></li>
-				</ul>
-			</nav>
-			<div class="clr"></div>
-	</header>
+		<div class="slider-item fade">
+			<picture>
+				<source media="(max-width: 576px)" srcset="img/india-mb.jpg">
+				<source media="(min-width: 577px)" srcset="img/india.jpg">
+				<img src="img/india.jpg" alt="Taj Mahal - India">
+			</picture>
+			<div class="slide-text pd-10">
+				<h3 class="mg-20">Taj Mahal</h3>
+				<p><q class="mg-10">"The Epitome of love".</q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia iusto harum beatae magni consectetur voluptatum consequatur, dolorem hic facere sunt neque odio eveniet unde, officiis facilis esse asperiores dolorum voluptate!</p>
+			</div>
+		</div>
+		<div class="slider-item fade">
+			<picture>
+				<source media="(max-width: 576px)" srcset="img/paris-mb.jpg">
+				<source media="(min-width: 577px)" srcset="img/paris.jpg">
+				<img src="img/paris.jpg" alt="Eiffel tower - Paris">
+			</picture>
+			<div class="slide-text pd-10">
+				<h3 class="mg-20">Paris</h3>
+				<p><q class="mg-10">"The City of Lights".</q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla repudiandae odit porro officiis delectus nihil quod, laborum eos? Tempore eaque eius dignissimos maiores. Sequi neque nisi, fugiat enim incidunt tempore dignissimos natus itaque veniam labore.</p>
+			</div>
+		</div>
+		<div class="slider-item fade">
+			<picture>
+				<source media="(max-width: 576px)" srcset="img/cancun-mb.jpg">
+				<source media="(min-width: 577px)" srcset="img/cancun.jpg">
+				<img src="img/cancun.jpg" alt="Cancun - Mexico">
+			</picture>
+			<div class="slide-text pd-10">
+				<h3 class="mg-20">Canc&uacute;n</h3>
+				<p><q class="mg-10">"Mexico's finest beaches".</q>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet ipsa nulla sequi quos ipsum veritatis, temporibus ullam tempore sint minima atque natus aut ad explicabo nesciunt deserunt iste voluptate?</p>
+			</div>
+		</div>
+
+		<!-- Slider Controls -->
+
+		<div id="prev-button" class="cycle-button">
+			<span>&lt;</span>
+		</div>
+		<div id="next-button" class="cycle-button">
+			<span>&gt;</span>
+		</div>
+	</div>
+
+</main>
 </body>
 <script src="js/menu.js"></script>
+<script src="js/slider.js"></script>
 </html>

@@ -1,7 +1,7 @@
 /* -------- HEADER AND NAVBAR --------- */
 
 header#main-nav{
-	background: rgba(32, 194, 89, 0.555);
+	background: rgba(32, 194, 89, 0.26);
 }
 
 header#main-nav>div{
@@ -48,4 +48,10 @@ header#main-nav>div{
 	left: -9999px;
 	top: -9999px;
 	opacity: 0;
+}
+
+/* ------- CAPTIONS ---------- */
+
+.slide-text{
+	width: 60%;
 }

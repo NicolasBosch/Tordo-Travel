@@ -9,12 +9,30 @@
 }
 
 body{
+	color: #444444;
 	font-size: 17px;
 	line-height: 1.2em;
+	font-family: 'Raleway', sans-serif;
+}
+
+h2{
+	font-size: 2em;
+	line-height: 1em;
+}
+
+.text-center{
+	text-align: center;
 }
 
 ol, ul{
 	list-style: none;
+}
+
+hr{
+	width: 85%;
+	border: 0.5px solid #cfcfcfc4;
+	margin: 5px auto;
+
 }
 
 .hide{
@@ -22,6 +40,10 @@ ol, ul{
 	top: -9999px !important;
 	left: -9999px !important;
 	opacity: 0 !important;
+}
+
+.fade{
+	opacity: 0;
 }
 
 .flex{
@@ -64,10 +86,15 @@ ol, ul{
 	margin: 20px;
 }
 
+
 /* ---------- HEADER AND NAVBAR --------- */
 
 header#main-nav{
+	height: 95px;
+	width: 100%;
 	background: #20C258;
+	position: absolute;
+	z-index: 10;
 }
 
 #main-logo{
@@ -83,6 +110,7 @@ header#main-nav{
 	color: #efefef;
 	text-align: center;
 	padding: 20px 0;
+	font-size: 0.5em;
 }
 
 #navbar{
@@ -156,4 +184,109 @@ header#main-nav{
 
 #btn-close>.line:last-child{
 	transform: translate(-3px,-5px) rotate(-45deg);
+}
+
+/* ------- SLIDER ----------- */
+
+.slider-container{
+	position: relative;
+	width: 100%;
+	align-items: center;
+}
+
+.slider-item{
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+	transition: opacity 1000ms ease-in-out;
+	z-index: 1;
+}
+
+.slider-item img{
+	width: 100%;
+	height: auto;
+}
+
+
+/* CAPTIONS */
+
+.slide-text{
+	color: #fff;
+	position: absolute;
+	bottom: 50px;
+	font-weight: normal;
+	background: rgba(0, 0, 0, 0.2);
+	transition: opacity 400ms ease-in-out;
+	z-index: 2;
+}
+
+.slide-text h3{
+	font-size: 2em;
+}
+
+.slide-text q{
+	display: block;
+	text-align: right;
+	font-style: italic;
+	font-size: 1.15em;
+}
+
+.slide-text q::before{
+	content: "-";
+}
+
+/* ------ INDICATORS ------ */
+
+.slider-indicators{
+	position: absolute;
+	z-index: 3;
+	bottom: 10px;
+	left: 50%;
+	height: 30px;
+	transform: translateX(-50%);
+}
+
+.indicator{
+	display: inline-block;
+	width: 3vw;
+	height: 5px;
+	background: rgba(248, 248, 248, 0.568);
+	margin-right: 10px;
+	padding: 0 10px;
+}
+
+.indicator-active{
+	background: rgba(255, 255, 255, 0.89);
+}
+
+/* -------- PREV AND NEXT BUTTONS --------- */
+
+.cycle-button{
+	position: absolute;
+	top: 50%;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	transform: translateY(-50%);
+	z-index: 20;
+	border: 2px solid #fdfdfd42;
+	color: #fdfdfd42;
+	text-align:center;
+	padding: 13px;
+	font-size: 2.2em;
+	font-weight: bold;
+}
+
+.cycle-button:hover{
+	border-color: #fdfdfd;
+	color: #fdfdfd;
+	cursor: pointer;
+}
+
+#prev-button{
+	left: 10px;
+}
+
+#next-button{
+	right: 10px;
 }
