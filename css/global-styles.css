@@ -409,3 +409,13 @@ header#main-nav{
 	display: inline-block;
 	padding: 5px 10px;
 }
+
+/* -------- ABOUT --------- */
+
+.about-img img{
+	width: 100%;
+}
+
+.about-text h4, #about h3{
+	font-size: 1.5em;
+}

@@ -106,3 +106,10 @@ header#main-nav>div{
 	bottom: 20px;
 	right: 20px;
 }
+
+/* --------- ABOUT --------- */
+
+.about-img, .about-text{
+	width: 50%;
+	max-width: 500px;
+}
