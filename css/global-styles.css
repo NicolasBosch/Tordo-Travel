@@ -179,13 +179,16 @@ header#main-nav{
 .slider-container{
 	position: relative;
 	width: 100%;
+	height: 900px;
 	align-items: center;
 }
 
 .slider-item{
-	position: absolute;
 	width: 100%;
 	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
 	transition: opacity 1000ms ease-in-out;
 	z-index: 1;
 }

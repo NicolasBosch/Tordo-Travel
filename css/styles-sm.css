@@ -1,6 +1,7 @@
-.hide-on-md{
-	display: none;
+header#main-nav{
+	position: fixed;
 }
+
 
 .cycle-button{
 	width: 40px;
