@@ -39,12 +39,19 @@ function start(){
 	return setInterval(next,6000);
 }
 
+
+/* The main image slider at the top of the page has 'position:absolute' images in it, which makes it
+difficult to make the slider responsive. This function helps by taking the height of the first image and applying
+it to the slider container, which has relative positioning. The function is called at DOM load and on resize.
+*/
+
 function resize(){
 	let imgSize = document.querySelector(".slider-item img").clientHeight;
+	console.log(imgSize);
 	slider.setAttribute("style","height:"+imgSize+"px");
 }
 
+document.addEventListener("DOMContentLoaded",resize);
 window.addEventListener("resize",resize);
-document.onload = resize();
 btnPrev.addEventListener("click",prev);
 btnNext.addEventListener("click",next);

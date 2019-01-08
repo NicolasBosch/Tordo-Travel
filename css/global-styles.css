@@ -6,6 +6,7 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	outline: none;
 }
 
 body{
@@ -42,33 +43,15 @@ hr{
 	opacity: 0 !important;
 }
 
-.fade{
-	opacity: 0;
-}
+.fade{opacity: 0;}
 
-.flex{
-	display: flex;
-}
+.flex{display: flex;}
+.row{flex-direction: row;}
+.justify-center{justify-content: center;}
+.align-center{align-items: center;}
+.wrap{flex-wrap: wrap;}
 
-.row{
-	flex-direction: row;
-}
-
-.justify-center{
-	justify-content: center;
-}
-
-.align-center{
-	align-items: center;
-}
-
-.wrap{
-	flex-wrap: wrap;
-}
-
-.clr{
-	clear: both;
-}
+.clr{clear: both;}
 
 .pd-10{padding: 10px;}
 .pd-15{padding: 15px;}
@@ -90,7 +73,8 @@ hr{
 .mt-15{margin-top: 15px;}
 .mt-20{margin-top: 20px;}
 
-
+.w-50{width: 50%;}
+.w-100{width: 100%;}
 /* ---------- HEADER AND NAVBAR --------- */
 
 header#main-nav{
@@ -419,3 +403,100 @@ header#main-nav{
 .about-text h4, #about h3{
 	font-size: 1.5em;
 }
+
+/* --------- CONTACT ---------- */
+
+#contact{
+	width: 80%;
+	margin: auto;
+}
+
+#contact article{
+	width: 50%;
+	height: 520px;
+	min-width: 440px;
+}
+
+.map iframe{
+	display: block;
+	margin: auto;
+}
+
+.map p{
+	padding: 5px;
+	min-width: 200px;
+}
+
+.map a:link, .map a:visited{
+	color: #222222;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.map a:hover, .map a:active{
+	color: #555555;
+}
+
+.contact-form{
+	background: #333333;
+}
+
+.form-wrapper{
+	width: 90%;
+	margin: auto;
+	color: #efefef;
+}
+
+.form-wrapper label, .form-wrapper input{
+	display: block;
+	padding: 7px 5px;
+}
+
+.form-wrapper input, .form-wrapper textarea{
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+}
+
+.form-wrapper textarea{
+	resize: none;
+	height: 230px;
+}
+
+.form-wrapper input[type="submit"]{
+	padding: 10px 0;
+	background: #1daf50;
+	border-color: #1daf50;
+	color: #efefef;
+	text-transform: uppercase;
+}
+
+.form-wrapper input[type="submit"]:hover{
+	background: #20C258;
+	cursor: pointer;
+}
+
+.form-wrapper input:focus, .form-wrapper textarea:focus{
+	box-shadow: 0 0 2px 0 #1daf50 inset;
+	border-color: #1daf50;
+}
+
+/* -------- FOOTER --------- */
+
+.footer-container{
+	background: #333333;
+	color: #efefef;
+}
+
+.footer-container p{
+	display: inline-block;
+	height: 100%;
+	font-size: 1.5em;
+	padding: 5px 0;
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+.footer-container img{
+	opacity: 0.3;
+}
+
